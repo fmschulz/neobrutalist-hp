@@ -183,6 +183,18 @@ strong {
     margin-bottom: var(--space-md);
 }
 
+.hero-location {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-black);
+    margin-bottom: var(--space-lg);
+    padding: var(--space-xs) var(--space-sm);
+    border: var(--border-width) solid var(--color-black);
+    background: var(--color-white);
+    display: inline-block;
+    box-shadow: 2px 2px 0 var(--color-black);
+}
+
 .hero-description {
     font-size: 1.125rem;
     margin-bottom: var(--space-lg);
