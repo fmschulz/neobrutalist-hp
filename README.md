@@ -1,5 +1,7 @@
 # Frederik Schulz, PhD - Personal Website
 
+https://fmschulz.github.io/neobrutalist-hp/
+
 A neo-brutalist personal website showcasing research in AI/ML and microbiome data science.
 
 ## Features
