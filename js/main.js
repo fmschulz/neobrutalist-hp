@@ -2,6 +2,18 @@
 
 // Smooth scroll for navigation links
 document.addEventListener('DOMContentLoaded', function() {
+    // Rotating text animation
+    const rotatingText = document.getElementById('rotating-text');
+    if (rotatingText) {
+        const words = ['AI', 'Data', 'Microbe', 'Virus'];
+        let currentIndex = 0;
+        
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % words.length;
+            rotatingText.textContent = words[currentIndex];
+        }, 2000); // Change word every 2 seconds
+    }
+    
     // Add smooth scrolling to all links
     const links = document.querySelectorAll('a[href^="#"]');
     
