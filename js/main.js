@@ -6,11 +6,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const rotatingText = document.getElementById('rotating-text');
     if (rotatingText) {
         const words = ['AI', 'Data', 'Microbe', 'Virus'];
+        const colors = ['#ff6b35', '#ff006e', '#00f5ff', '#ccff00']; // neon orange, pink, cyan, lime
         let currentIndex = 0;
+        
+        // Get the shape box element
+        const shapeBox = rotatingText.closest('.shape-box');
         
         setInterval(() => {
             currentIndex = (currentIndex + 1) % words.length;
             rotatingText.textContent = words[currentIndex];
+            
+            // Change the background color of the shape box
+            if (shapeBox) {
+                shapeBox.style.backgroundColor = colors[currentIndex];
+            }
         }, 2000); // Change word every 2 seconds
     }
     
